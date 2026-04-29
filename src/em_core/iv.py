@@ -289,7 +289,7 @@ def extract_atm_iv_interpolated(
     exp_date = date.fromisoformat(expiration)
     dte = max((exp_date - date.today()).days, 1)
     return {
-        "atm_iv": atm_iv / 100.0,
+        "atm_iv": atm_iv,
         "expiration": expiration,
         "dte": dte,
         "atm_strike": atm_strike,
